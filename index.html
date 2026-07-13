@@ -1,47 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antigravity | Elevate Your Ideas</title>
-    <meta name="description" content="A modern, high-performance landing page for the Antigravity project, featuring cutting-edge design and glassmorphism.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Eduardo Vázquez | Digital Studio</title>
+    <meta name="description" content="Estudio digital premium especializado en diseño y desarrollo web de alto rendimiento para negocios locales. Transparencia, calidad y soporte integral.">
+    
+    <!-- Tipografía Inter -->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    
+    <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-elements">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-    </div>
-    
-    <nav class="glass-nav">
-        <div class="logo">Antigravity</div>
-        <ul class="nav-links">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact" class="btn-primary">Get Started</a></li>
-        </ul>
+    <!-- Navbar Minimalista -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Eduardo Vázquez</div>
+            <div class="nav-links">
+                <a href="#proceso" class="nav-link">Nuestro Proceso</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#contacto" class="btn btn-outline">Reservar Demo</a>
+            </div>
+        </div>
     </nav>
 
-    <main class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Defy <span>Gravity</span></h1>
-            <p class="hero-subtitle">Experience the next generation of web design. Fast, beautiful, and completely weightless.</p>
-            <div class="cta-group">
-                <button class="btn-primary" id="exploreBtn">Explore Now</button>
-                <button class="btn-secondary">Learn More</button>
+    <!-- Hero Section -->
+    <header class="hero section">
+        <div class="container reveal">
+            <div class="badge">Estudio Digital Premium</div>
+            <h1 class="hero-title">
+                Diseño web de alto rendimiento<br>
+                <span class="text-gray">para negocios locales.</span>
+            </h1>
+            <p class="hero-subtitle">
+                Creamos experiencias digitales memorables que generan confianza inmediata. Más que una página web, construimos la infraestructura digital completa de tu negocio: diseño premium, SEO estratégico, métricas y soporte continuo.
+            </p>
+            <div class="hero-cta">
+                <a href="#contacto" class="btn btn-primary">Solicitar Demo Personalizada</a>
+                <span class="cta-note">Disponibilidad limitada. Consultoría gratuita de 30 min.</span>
             </div>
         </div>
-        <div class="hero-image glass-card">
-            <div class="card-content" id="dynamicContent">
-                <h3>Welcome to the future</h3>
-                <p>Interactive elements that respond to your touch.</p>
-                <div class="progress-ring"></div>
+        
+        <!-- Mockup / Visual Abstract -->
+        <div class="hero-visual container reveal delay-1">
+            <div class="mockup-frame">
+                <div class="mockup-header">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="mockup-body">
+                    <div class="wireframe-line w-full"></div>
+                    <div class="wireframe-line w-3/4"></div>
+                    <div class="wireframe-grid">
+                        <div class="wireframe-box"></div>
+                        <div class="wireframe-box"></div>
+                        <div class="wireframe-box"></div>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
+    </header>
+
+    <!-- Services Section -->
+    <section id="servicios" class="section bg-light">
+        <div class="container reveal">
+            <h2 class="section-title">Un servicio integral.<br><span class="text-gray">Cero complicaciones.</span></h2>
+            
+            <div class="grid features-grid">
+                <div class="feature-card">
+                    <div class="icon">🔍</div>
+                    <h3>SEO Inicial & Arquitectura</h3>
+                    <p>Estructuramos tu web para que Google la entienda desde el día uno. Palabras clave, velocidad extrema y optimización técnica.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">⚡</div>
+                    <h3>Diseño Premium & CRO</h3>
+                    <p>Estética impecable inspirada en los líderes de Silicon Valley. Diseñada específicamente para maximizar conversiones y ventas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📚</div>
+                    <h3>Documentación Profesional</h3>
+                    <p>Total transparencia. Entregamos manuales de marca, guías de estilo y documentación de tu infraestructura web.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🛡️</div>
+                    <h3>Mantenimiento & Soporte</h3>
+                    <p>Informes mensuales de rendimiento, actualizaciones de seguridad y un equipo siempre disponible para tus dudas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contacto" class="section cta-section">
+        <div class="container reveal">
+            <h2 class="section-title text-center">Eleva el estándar de tu negocio.</h2>
+            <p class="cta-text text-center">Agenda una sesión estratégica con nosotros. Analizaremos tu situación actual y te propondremos un plan de acción sin compromiso.</p>
+            <div class="flex-center">
+                <a href="mailto:contacto@eduardovazquez.com" class="btn btn-primary">Reservar Demo Personalizada</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="logo">Eduardo Vázquez Digital Studio</div>
+            <p class="footer-note">Diseño y desarrollo web premium. © 2026 Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
