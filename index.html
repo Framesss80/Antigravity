@@ -4,103 +4,271 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduardo Vázquez | Digital Studio</title>
-    <meta name="description" content="Estudio digital premium especializado en diseño y desarrollo web de alto rendimiento para negocios locales. Transparencia, calidad y soporte integral.">
-    
-    <!-- Tipografía Inter -->
+    <meta name="description" content="Diseño web de alto rendimiento para negocios locales. Diseñamos experiencias digitales modernas que transmiten confianza, diferencian tu marca y convierten visitas en clientes.">
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    
-    <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar Minimalista -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">Eduardo Vázquez</div>
             <div class="nav-links">
                 <a href="#proceso" class="nav-link">Nuestro Proceso</a>
                 <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#portfolio" class="nav-link">Proyectos</a>
                 <a href="#contacto" class="btn btn-outline">Reservar Demo</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- 1. Hero -->
     <header class="hero section">
         <div class="container reveal">
-            <div class="badge">Estudio Digital Premium</div>
             <h1 class="hero-title">
-                Diseño web de alto rendimiento<br>
-                <span class="text-gray">para negocios locales.</span>
+                La presencia digital que tu negocio merece.
             </h1>
             <p class="hero-subtitle">
-                Creamos experiencias digitales memorables que generan confianza inmediata. Más que una página web, construimos la infraestructura digital completa de tu negocio: diseño premium, SEO estratégico, métricas y soporte continuo.
+                Diseñamos experiencias digitales modernas que transmiten confianza, diferencian tu marca y convierten visitas en clientes.
             </p>
             <div class="hero-cta">
-                <a href="#contacto" class="btn btn-primary">Solicitar Demo Personalizada</a>
-                <span class="cta-note">Disponibilidad limitada. Consultoría gratuita de 30 min.</span>
+                <a href="#contacto" class="btn btn-primary btn-large">Solicitar demostración personalizada</a>
+                <span class="cta-note">Sin compromiso • 20 minutos • Online o presencial</span>
             </div>
         </div>
         
-        <!-- Mockup / Visual Abstract -->
+        <!-- Mockups Espectaculares (CSS placeholders hasta tener fotos) -->
         <div class="hero-visual container reveal delay-1">
-            <div class="mockup-frame">
-                <div class="mockup-header">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+            <div class="mockup-composition">
+                <div class="mockup-tablet shadow-xl">
+                    <div class="placeholder-content bg-gradient-1">Tu Web en Tablet</div>
                 </div>
-                <div class="mockup-body">
-                    <div class="wireframe-line w-full"></div>
-                    <div class="wireframe-line w-3/4"></div>
-                    <div class="wireframe-grid">
-                        <div class="wireframe-box"></div>
-                        <div class="wireframe-box"></div>
-                        <div class="wireframe-box"></div>
+                <div class="mockup-laptop shadow-2xl">
+                    <div class="mockup-header">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
                     </div>
+                    <div class="placeholder-content bg-gradient-2">Tu Web en Ordenador</div>
+                </div>
+                <div class="mockup-mobile shadow-xl">
+                    <div class="placeholder-content bg-gradient-3">En Móvil</div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section id="servicios" class="section bg-light">
+    <!-- 2. Problema vs Solución -->
+    <section class="section bg-light border-y">
         <div class="container reveal">
-            <h2 class="section-title">Un servicio integral.<br><span class="text-gray">Cero complicaciones.</span></h2>
-            
-            <div class="grid features-grid">
-                <div class="feature-card">
-                    <div class="icon">🔍</div>
-                    <h3>SEO Inicial & Arquitectura</h3>
-                    <p>Estructuramos tu web para que Google la entienda desde el día uno. Palabras clave, velocidad extrema y optimización técnica.</p>
+            <h2 class="section-title text-center">La mayoría de negocios cometen el mismo error.</h2>
+            <div class="comparison-grid">
+                <div class="comparison-col error-col">
+                    <div class="comp-item"><span class="icon-x">✕</span> Tener una web antigua.</div>
+                    <div class="comp-item"><span class="icon-x">✕</span> No transmitir confianza.</div>
+                    <div class="comp-item"><span class="icon-x">✕</span> No aparecer donde buscan los clientes.</div>
                 </div>
-                <div class="feature-card">
-                    <div class="icon">⚡</div>
-                    <h3>Diseño Premium & CRO</h3>
-                    <p>Estética impecable inspirada en los líderes de Silicon Valley. Diseñada específicamente para maximizar conversiones y ventas.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">📚</div>
-                    <h3>Documentación Profesional</h3>
-                    <p>Total transparencia. Entregamos manuales de marca, guías de estilo y documentación de tu infraestructura web.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🛡️</div>
-                    <h3>Mantenimiento & Soporte</h3>
-                    <p>Informes mensuales de rendimiento, actualizaciones de seguridad y un equipo siempre disponible para tus dudas.</p>
+                <div class="comparison-divider"></div>
+                <div class="comparison-col success-col">
+                    <div class="comp-item"><span class="icon-check">✓</span> Diseño premium</div>
+                    <div class="comp-item"><span class="icon-check">✓</span> SEO Local</div>
+                    <div class="comp-item"><span class="icon-check">✓</span> Conversión</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section id="contacto" class="section cta-section">
+    <!-- 3. Entregables (Todo lo que recibe un cliente) -->
+    <section id="servicios" class="section">
         <div class="container reveal">
-            <h2 class="section-title text-center">Eleva el estándar de tu negocio.</h2>
-            <p class="cta-text text-center">Agenda una sesión estratégica con nosotros. Analizaremos tu situación actual y te propondremos un plan de acción sin compromiso.</p>
-            <div class="flex-center">
-                <a href="mailto:contacto@eduardovazquez.com" class="btn btn-primary">Reservar Demo Personalizada</a>
+            <h2 class="section-title">Todo lo que recibe un cliente.</h2>
+            <div class="bento-grid">
+                <div class="bento-card span-2">
+                    <h3>Diseño web totalmente personalizado</h3>
+                    <p>No utilizamos plantillas. Cada proyecto está diseñado desde cero para reflejar la identidad única de tu negocio.</p>
+                </div>
+                <div class="bento-card">
+                    <h3>SEO Local</h3>
+                    <p>Configuración inicial para aparecer correctamente en Google.</p>
+                </div>
+                <div class="bento-card">
+                    <h3>Documentación</h3>
+                    <ul class="clean-list">
+                        <li>Contrato.</li>
+                        <li>Entrega.</li>
+                        <li>Manual.</li>
+                        <li>Informes.</li>
+                    </ul>
+                    <p class="text-sm mt-2 text-gray">Todo perfectamente organizado.</p>
+                </div>
+                <div class="bento-card span-2 bg-dark">
+                    <h3 class="text-white">Infraestructura Completa</h3>
+                    <div class="infra-tags">
+                        <span>Hosting</span>
+                        <span>Dominio</span>
+                        <span>Correo</span>
+                        <span>WhatsApp</span>
+                        <span>Google Maps</span>
+                        <span>Responsive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Timeline (Así trabajamos) -->
+    <section id="proceso" class="section bg-light border-y">
+        <div class="container reveal">
+            <h2 class="section-title">Así trabajamos.</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="step-num">01</div>
+                    <div class="step-content">
+                        <h3>Primera llamada.</h3>
+                        <p>Conocemos tu negocio.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-num">02</div>
+                    <div class="step-content">
+                        <h3>Demostración.</h3>
+                        <p>Creamos un diseño exclusivo.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-num">03</div>
+                    <div class="step-content">
+                        <h3>Presentación.</h3>
+                        <p>Revisamos contigo cada detalle.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-num">04</div>
+                    <div class="step-content">
+                        <h3>Desarrollo.</h3>
+                        <p>Transformamos el diseño en una web rápida y moderna.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-num">05</div>
+                    <div class="step-content">
+                        <h3>Entrega.</h3>
+                        <p>Recibes documentación, accesos y formación.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="step-num">06</div>
+                    <div class="step-content">
+                        <h3>Seguimiento.</h3>
+                        <p>Si quieres, seguimos cuidando tu web.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Portfolio -->
+    <section id="portfolio" class="section">
+        <div class="container reveal">
+            <h2 class="section-title text-center">Nuestro Trabajo</h2>
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-card 3d-card">
+                    <div class="portfolio-image-wrapper">
+                        <div class="portfolio-mockup mockup-laptop">
+                            <div class="mockup-header"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                            <div class="placeholder-content bg-gradient-4">Clínica Dental</div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Centro de Salud Premium</h3>
+                        <p>Diseño corporativo y sistema de reservas.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="portfolio-card 3d-card">
+                    <div class="portfolio-image-wrapper">
+                        <div class="portfolio-mockup mockup-laptop">
+                            <div class="mockup-header"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                            <div class="placeholder-content bg-gradient-5">Despacho Abogados</div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Firma Legal</h3>
+                        <p>Posicionamiento SEO Local y confianza.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Por qué Digital Studio -->
+    <section class="section bg-dark text-white text-center">
+        <div class="container reveal">
+            <h2 class="section-title">¿Por qué Digital Studio?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">✔ Acceso completo al proyecto</div>
+                <div class="benefit-item">✔ GitHub</div>
+                <div class="benefit-item">✔ Cloudflare</div>
+                <div class="benefit-item">✔ Transparencia</div>
+                <div class="benefit-item">✔ Documentación</div>
+                <div class="benefit-item">✔ SEO Inicial</div>
+                <div class="benefit-item">✔ Diseño personalizado</div>
+                <div class="benefit-item">✔ Sin plantillas</div>
+                <div class="benefit-item">✔ Informes mensuales</div>
+                <div class="benefit-item">✔ Comunicación directa</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Sobre Mí -->
+    <section class="section">
+        <div class="container reveal about-section">
+            <div class="about-content">
+                <span class="badge">Detrás de Digital Studio</span>
+                <h2>Soy Eduardo Vázquez, tengo 22 años y soy el fundador de Digital Studio, un estudio especializado en el diseño y desarrollo de páginas web modernas para negocios locales.</h2>
+                
+                <p>Desde siempre me ha gustado crear, aprender y mejorar todo aquello en lo que trabajo. Con el tiempo descubrí que una página web puede ser mucho más que una simple tarjeta de presentación: puede convertirse en la herramienta que transmite la personalidad de un negocio, genera confianza y ayuda a conseguir nuevos clientes.</p>
+                
+                <p>Por eso decidí especializarme en el diseño web, combinando creatividad, estrategia y tecnología para desarrollar proyectos que realmente aporten valor.</p>
+                
+                <p>Mi forma de trabajar se basa en dos principios muy sencillos: <strong>hacer las cosas bien y cuidar cada detalle</strong>. Soy una persona perfeccionista y creo que la diferencia entre una web correcta y una excelente está en los pequeños detalles que muchas veces pasan desapercibidos: la velocidad de carga, una navegación intuitiva, un diseño limpio, un proceso organizado o una comunicación cercana con el cliente.</p>
+                
+                <p>No me interesa entregar una web y desaparecer. Mi objetivo es construir una relación de confianza, acompañando a cada negocio antes, durante y después del proyecto. Por eso todos mis trabajos siguen un proceso claro, transparente y profesional, con documentación, contratos, acceso al proyecto y la posibilidad de contar con un mantenimiento continuo.</p>
+                
+                <p>Trabajo principalmente con negocios locales porque creo que son quienes más pueden beneficiarse de una presencia digital cuidada y profesional. Mi misión es ayudarles a destacar frente a su competencia con páginas web que transmitan la calidad de su trabajo y conviertan visitantes en clientes.</p>
+                
+                <p class="text-strong mt-4">Porque, al final, una buena página web no consiste solo en verse bien. Consiste en representar tu negocio como realmente merece.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FAQ -->
+    <section class="section bg-light border-y">
+        <div class="container reveal">
+            <h2 class="section-title text-center">Preguntas Frecuentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">¿Cuánto tarda el desarrollo de una web? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>Dependiendo de la complejidad, un proyecto estándar suele estar listo entre 2 y 4 semanas desde la presentación del diseño.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Trabajáis con WordPress o plantillas? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>No usamos plantillas prefabricadas. Diseñamos a medida y desarrollamos con tecnologías modernas (como React, HTML/CSS optimizado, etc) garantizando máxima velocidad y personalización.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">¿Qué pasa si necesito ayuda técnica después? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>Ofrecemos planes de mantenimiento opcionales que incluyen actualizaciones, copias de seguridad y soporte técnico directo por WhatsApp o correo.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. CTA Final -->
+    <section id="contacto" class="section cta-section bg-dark text-white text-center">
+        <div class="container reveal">
+            <h2 class="hero-title">Eleva el estándar de tu negocio.</h2>
+            <p class="cta-text">Agenda una sesión estratégica. Analizaremos tu situación actual y te propondremos un plan de acción sin compromiso.</p>
+            <div class="flex-center mt-4">
+                <a href="mailto:contacto@eduardovazquez.com" class="btn btn-primary btn-large btn-inverted">Solicitar demostración personalizada</a>
             </div>
         </div>
     </section>
