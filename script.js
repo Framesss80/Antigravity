@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Initial check and event listener
     setTimeout(revealOnScroll, 100);
     window.addEventListener('scroll', revealOnScroll);
 
@@ -47,13 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
         question.addEventListener('click', () => {
             const isActive = item.classList.contains('active');
             
-            // Close all other FAQs
             faqItems.forEach(otherItem => {
                 otherItem.classList.remove('active');
                 otherItem.querySelector('.faq-answer').style.maxHeight = null;
             });
 
-            // Toggle current FAQ
             if (!isActive) {
                 item.classList.add('active');
                 answer.style.maxHeight = answer.scrollHeight + "px";
@@ -63,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Apple-style 3D Hover effect on Portfolio Cards
     const cards3D = document.querySelectorAll('.3d-card');
-    
     cards3D.forEach(card => {
         const mockup = card.querySelector('.portfolio-mockup');
         if (!mockup) return;
@@ -79,9 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const rotateX = ((y - centerY) / centerY) * -5;
             const rotateY = ((x - centerX) / centerX) * 5;
 
-            // Apply 3D rotation to the mockup inside the card
             mockup.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
-            mockup.style.transition = 'none'; // Remove transition for instant follow
+            mockup.style.transition = 'none';
         });
 
         card.addEventListener('mouseleave', () => {
@@ -89,4 +84,45 @@ document.addEventListener('DOMContentLoaded', () => {
             mockup.style.transition = 'transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1)';
         });
     });
+
+    // 5. Animated Number Counters
+    const statNumbers = document.querySelectorAll('.stat-number');
+    let hasAnimated = false;
+
+    const animateNumbers = () => {
+        if (hasAnimated) return;
+        
+        const triggerBottom = window.innerHeight * 0.8;
+        let shouldAnimate = false;
+
+        statNumbers.forEach(stat => {
+            const statTop = stat.getBoundingClientRect().top;
+            if (statTop < triggerBottom) {
+                shouldAnimate = true;
+            }
+        });
+
+        if (shouldAnimate) {
+            hasAnimated = true;
+            statNumbers.forEach(stat => {
+                const target = +stat.getAttribute('data-target');
+                const duration = 2000; // ms
+                const increment = target / (duration / 16); // 60fps
+                
+                let current = 0;
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        stat.innerText = Math.ceil(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        stat.innerText = target;
+                    }
+                };
+                updateCounter();
+            });
+        }
+    };
+
+    window.addEventListener('scroll', animateNumbers);
 });
