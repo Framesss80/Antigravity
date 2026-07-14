@@ -125,4 +125,46 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', animateNumbers);
+
+    // 6. Reservar Demo — scroll to top
+    const reservarBtn = document.getElementById('btn-reservar-demo');
+    if (reservarBtn) {
+        reservarBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // 7. Cookie Consent Banner
+    const cookieBanner = document.getElementById('cookie-banner');
+    const cookieAccept = document.getElementById('cookie-accept');
+    const cookieReject = document.getElementById('cookie-reject');
+
+    if (cookieBanner) {
+        const cookieChoice = localStorage.getItem('cookie-consent');
+
+        if (cookieChoice) {
+            // User already made a choice, hide banner immediately
+            cookieBanner.style.display = 'none';
+        }
+
+        if (cookieAccept) {
+            cookieAccept.addEventListener('click', () => {
+                localStorage.setItem('cookie-consent', 'accepted');
+                cookieBanner.classList.add('hidden');
+                setTimeout(() => { cookieBanner.style.display = 'none'; }, 400);
+            });
+        }
+
+        if (cookieReject) {
+            cookieReject.addEventListener('click', () => {
+                localStorage.setItem('cookie-consent', 'rejected');
+                cookieBanner.classList.add('hidden');
+                setTimeout(() => { cookieBanner.style.display = 'none'; }, 400);
+            });
+        }
+    }
 });

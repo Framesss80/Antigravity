@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Cookies | Eduardo Vázquez Digital Studio</title>
+    <meta name="description" content="Política de Cookies del sitio web de Eduardo Vázquez Digital Studio. Información sobre las cookies utilizadas, su finalidad y cómo gestionarlas.">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Legal Page Specific Styles */
+        .legal-page {
+            padding-top: calc(var(--nav-height) + 80px);
+            padding-bottom: 100px;
+        }
+
+        .legal-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .legal-header {
+            margin-bottom: 64px;
+            padding-bottom: 48px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .legal-title {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.04em;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+
+        .legal-date {
+            font-size: 0.9375rem;
+            color: var(--text-tertiary);
+            font-weight: 400;
+        }
+
+        .legal-section {
+            margin-bottom: 48px;
+        }
+
+        .legal-section h2 {
+            font-size: 1.375rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .legal-section h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .legal-section p {
+            font-size: 1.0625rem;
+            color: var(--text-secondary);
+            line-height: 1.75;
+            margin-bottom: 16px;
+        }
+
+        .legal-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 16px 0;
+        }
+
+        .legal-section ul li {
+            font-size: 1.0625rem;
+            color: var(--text-secondary);
+            line-height: 1.75;
+            padding-left: 24px;
+            position: relative;
+            margin-bottom: 4px;
+        }
+
+        .legal-section ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: var(--border-color);
+        }
+
+        .legal-info {
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 16px;
+        }
+
+        .legal-info p {
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .legal-info p:last-child {
+            margin-bottom: 0;
+        }
+
+        .legal-info strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .legal-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+            margin-bottom: 48px;
+        }
+
+        .legal-back:hover {
+            color: var(--text-primary);
+        }
+
+        .legal-back svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .legal-nav .nav-container {
+            justify-content: flex-start;
+        }
+
+        .legal-nav .logo a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .legal-footer {
+            border-top: 1px solid var(--border-color);
+        }
+
+        .legal-highlight {
+            background: var(--bg-light);
+            border-left: 3px solid var(--text-primary);
+            padding: 16px 24px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 16px;
+        }
+
+        .legal-highlight p {
+            margin-bottom: 4px;
+        }
+
+        .cookie-type-card {
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px 28px;
+            margin-bottom: 20px;
+        }
+
+        .cookie-type-card h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .cookie-type-card p {
+            margin-bottom: 12px;
+        }
+
+        .cookie-type-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .cookie-type-card ul {
+            margin-bottom: 12px;
+        }
+
+        .browser-links {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .browser-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 16px;
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .browser-link:hover {
+            background: var(--bg-color);
+            border-color: var(--text-primary);
+        }
+
+        @media (max-width: 900px) {
+            .legal-title {
+                font-size: 2.25rem;
+            }
+
+            .legal-page {
+                padding-top: calc(var(--nav-height) + 48px);
+                padding-bottom: 64px;
+            }
+
+            .legal-header {
+                margin-bottom: 48px;
+                padding-bottom: 32px;
+            }
+
+            .legal-section {
+                margin-bottom: 36px;
+            }
+
+            .browser-links {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .browser-links {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar legal-nav">
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">Eduardo Vázquez</a></div>
+        </div>
+    </nav>
+
+    <main class="legal-page">
+        <div class="legal-container">
+
+            <a href="index.html" class="legal-back">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+                Volver al inicio
+            </a>
+
+            <header class="legal-header">
+                <h1 class="legal-title">Política de Cookies</h1>
+                <p class="legal-date">Última actualización: 01 / 01 / 2026</p>
+            </header>
+
+            <section class="legal-section">
+                <h2>1. ¿Qué son las cookies?</h2>
+                <p>Las cookies son pequeños archivos de texto que un sitio web almacena en el dispositivo del Usuario (ordenador, móvil o tablet) cuando visita una página web.</p>
+                <p>Su finalidad principal es reconocer al Usuario en futuras visitas, recordar determinadas preferencias, mejorar la experiencia de navegación y obtener información estadística sobre el uso del sitio web.</p>
+                <p>Las cookies no dañan el dispositivo del Usuario y pueden eliminarse en cualquier momento desde la configuración del navegador.</p>
+            </section>
+
+            <section class="legal-section">
+                <h2>2. ¿Quién es el responsable?</h2>
+                <div class="legal-info">
+                    <p><strong>Titular del sitio web:</strong> Eduardo Vazquez</p>
+                    <p><strong>Correo electrónico:</strong> digitalstudio24h@gmail.com</p>
+                    <p><strong>Página web:</strong> digitalstudioev.com</p>
+                </div>
+            </section>
+
+            <section class="legal-section">
+                <h2>3. Tipos de cookies utilizadas</h2>
+                <p>Este sitio web podrá utilizar las siguientes categorías de cookies:</p>
+
+                <div class="cookie-type-card">
+                    <h3>Cookies técnicas (necesarias)</h3>
+                    <p>Son aquellas imprescindibles para el funcionamiento del sitio web y permiten funciones básicas como:</p>
+                    <ul>
+                        <li>Navegación.</li>
+                        <li>Seguridad.</li>
+                        <li>Gestión del consentimiento.</li>
+                        <li>Formularios de contacto.</li>
+                        <li>Inicio de sesión (cuando exista).</li>
+                    </ul>
+                    <p>Estas cookies no requieren el consentimiento del Usuario.</p>
+                </div>
+
+                <div class="cookie-type-card">
+                    <h3>Cookies de preferencias</h3>
+                    <p>Permiten recordar determinadas configuraciones del Usuario para mejorar su experiencia de navegación. Por ejemplo:</p>
+                    <ul>
+                        <li>Idioma.</li>
+                        <li>Preferencias de visualización.</li>
+                        <li>Configuración regional.</li>
+                    </ul>
+                </div>
+
+                <div class="cookie-type-card">
+                    <h3>Cookies de análisis o estadísticas</h3>
+                    <p>Permiten conocer cómo utilizan los visitantes el sitio web con el objetivo de mejorar su funcionamiento. Entre otros datos pueden recopilar:</p>
+                    <ul>
+                        <li>Número de visitantes.</li>
+                        <li>Páginas más visitadas.</li>
+                        <li>Tiempo de permanencia.</li>
+                        <li>Dispositivo utilizado.</li>
+                        <li>Procedencia del tráfico.</li>
+                    </ul>
+                    <p>Estas cookies únicamente se instalarán cuando el Usuario haya otorgado su consentimiento.</p>
+                </div>
+
+                <div class="cookie-type-card">
+                    <h3>Cookies de marketing o publicidad</h3>
+                    <p>Permiten mostrar publicidad personalizada y medir la eficacia de campañas publicitarias. Podrán utilizarse herramientas como:</p>
+                    <ul>
+                        <li>Meta Pixel</li>
+                        <li>Google Ads</li>
+                        <li>LinkedIn Insight Tag</li>
+                        <li>Otras plataformas similares.</li>
+                    </ul>
+                    <p>Estas cookies solo se instalarán tras la aceptación expresa del Usuario.</p>
+                </div>
+            </section>
+
+            <section class="legal-section">
+                <h2>4. Cookies de terceros</h2>
+                <p>Este sitio web podrá incorporar servicios proporcionados por terceros que instalen cookies propias. Entre ellos, según las funcionalidades utilizadas por la página web:</p>
+                <ul>
+                    <li>Google Analytics</li>
+                    <li>Google Maps</li>
+                    <li>YouTube</li>
+                    <li>Vimeo</li>
+                    <li>Meta (Facebook e Instagram)</li>
+                    <li>Google Fonts</li>
+                    <li>Calendly</li>
+                    <li>WhatsApp</li>
+                    <li>Otras herramientas similares</li>
+                </ul>
+                <p>Cada uno de estos proveedores dispone de su propia Política de Privacidad y Política de Cookies.</p>
+            </section>
+
+            <section class="legal-section">
+                <h2>5. Gestión del consentimiento</h2>
+                <p>Cuando el Usuario accede por primera vez al sitio web, se muestra un banner de configuración de cookies que permite:</p>
+                <ul>
+                    <li>Aceptar todas las cookies.</li>
+                    <li>Rechazar todas las cookies no necesarias.</li>
+                    <li>Configurar las categorías de cookies de forma individual.</li>
+                </ul>
+                <p>El consentimiento podrá modificarse o retirarse en cualquier momento desde el panel de configuración disponible en el propio sitio web.</p>
+            </section>
+
+            <section class="legal-section">
+                <h2>6. Cómo desactivar las cookies</h2>
+                <p>El Usuario puede permitir, bloquear o eliminar las cookies instaladas desde la configuración de su navegador.</p>
+                <p>A continuación se facilitan los enlaces oficiales de los principales navegadores:</p>
+                <div class="browser-links">
+                    <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" class="browser-link">Google Chrome</a>
+                    <a href="https://support.mozilla.org/es/kb/cookies-informacion-que-los-sitios-web-guardan-en-" target="_blank" rel="noopener noreferrer" class="browser-link">Mozilla Firefox</a>
+                    <a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" class="browser-link">Microsoft Edge</a>
+                    <a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" class="browser-link">Safari</a>
+                    <a href="https://help.opera.com/en/latest/web-preferences/#cookies" target="_blank" rel="noopener noreferrer" class="browser-link">Opera</a>
+                </div>
+                <p>La desactivación de determinadas cookies puede afectar al correcto funcionamiento del sitio web.</p>
+            </section>
+
+            <section class="legal-section">
+                <h2>7. Conservación de las cookies</h2>
+                <p>Las cookies permanecerán almacenadas durante el tiempo estrictamente necesario para cumplir su finalidad.</p>
+                <p>Cada proveedor establece su propio período de conservación, que puede consultarse en sus respectivas políticas de privacidad.</p>
+            </section>
+
+            <section class="legal-section">
+                <h2>8. Actualización de la Política de Cookies</h2>
+                <p>La presente Política de Cookies podrá modificarse cuando resulte necesario para adaptarla a cambios legislativos o a modificaciones en las cookies utilizadas por el sitio web.</p>
+                <p>Se recomienda al Usuario revisar periódicamente esta política.</p>
+            </section>
+
+            <section class="legal-section">
+                <h2>9. Contacto</h2>
+                <p>Para cualquier consulta relacionada con la utilización de cookies podrá contactar con:</p>
+                <div class="legal-highlight">
+                    <p><strong>Eduardo Vazquez Digital Studio</strong></p>
+                    <p><strong>Correo electrónico:</strong> digitalstudio24h@gmail.com</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer bg-dark text-white legal-footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="logo text-white mb-2">Eduardo Vázquez Digital Studio</div>
+                <p class="footer-note text-gray-400">Diseño y desarrollo web premium para negocios locales.</p>
+            </div>
+            <div class="footer-links-grid">
+                <div class="footer-link-group">
+                    <h4>Contacto</h4>
+                    <a href="mailto:Digitalstudio24h@gmail.com">Correo Electrónico</a>
+                </div>
+                <div class="footer-link-group">
+                    <h4>Legal</h4>
+                    <a href="aviso-legal.html">Aviso Legal</a>
+                    <a href="politica-privacidad.html">Política de Privacidad</a>
+                    <a href="politica-cookies.html">Política de Cookies</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom text-center text-gray-400 mt-8 pt-8 border-t-dark">
+                © 2026 Eduardo Vázquez Digital Studio. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

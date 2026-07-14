@@ -12,18 +12,18 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">Eduardo Vázquez</div>
+            <a href="#top" class="logo-link"><img src="logo.png" alt="Eduardo Vázquez" class="logo-img"></a>
             <div class="nav-links">
                 <a href="#servicios" class="nav-link">Qué incluye</a>
                 <a href="#proceso" class="nav-link">Nuestro Proceso</a>
                 <a href="#portfolio" class="nav-link">Proyectos</a>
-                <a href="#hero-cta" class="btn btn-outline">Reservar Demo</a>
+                <a href="#top" class="btn btn-outline" id="btn-reservar-demo">Reservar Demo</a>
             </div>
         </div>
     </nav>
 
     <!-- 1. Hero -->
-    <header class="hero section">
+    <header id="top" class="hero section">
         <div class="container reveal">
             <h1 class="hero-title">
                 La presencia digital que tu negocio merece.
@@ -291,7 +291,7 @@
             <h2 class="hero-title">Eleva el estándar de tu negocio.</h2>
             <p class="cta-text">Agenda una sesión estratégica. Analizaremos tu situación actual y te propondremos un plan de acción sin compromiso.</p>
             <div class="flex-center mt-4">
-                <a href="mailto:contacto@eduardovazquez.com" class="btn btn-primary btn-large btn-inverted">Ver una propuesta para mi negocio</a>
+                <a href="mailto:digitalstudio24h@gmail.com" class="btn btn-primary btn-large btn-inverted">Ver una propuesta para mi negocio</a>
             </div>
         </div>
     </section>
@@ -299,22 +299,23 @@
     <!-- Footer Mejorado -->
     <footer class="footer bg-dark text-white">
         <div class="container footer-content">
-            <div class="footer-col">
-                <div class="logo text-white mb-2">Eduardo Vázquez Digital Studio</div>
+            <div class="footer-col compact-footer-col">
+                <img src="logo.png" alt="Eduardo Vázquez Digital Studio" class="footer-logo-img mb-2">
+                <div class="logo-text-compact text-white mb-1">Eduardo Vázquez Digital Studio</div>
                 <p class="footer-note text-gray-400">Diseño y desarrollo web premium para negocios locales.</p>
             </div>
             <div class="footer-links-grid">
                 <div class="footer-link-group">
                     <h4>Contacto</h4>
-                    <a href="mailto:contacto@eduardovazquez.com">Correo Electrónico</a>
-                    <a href="#">Agendar en Calendly</a>
+                    <a href="mailto:digitalstudio24h@gmail.com">Correo</a>
                     <a href="#">LinkedIn</a>
+                    <a href="https://calendly.com/digitalstudio24h/30min" target="_blank" rel="noopener noreferrer">Calendly</a>
                 </div>
                 <div class="footer-link-group">
                     <h4>Legal</h4>
-                    <a href="#">Aviso Legal</a>
-                    <a href="#">Política de Privacidad</a>
-                    <a href="#">Política de Cookies</a>
+                    <a href="aviso-legal.html">Aviso Legal</a>
+                    <a href="politica-cookies.html">Política de Cookies</a>
+                    <a href="politica-privacidad.html">Política de Privacidad</a>
                 </div>
             </div>
         </div>
@@ -324,6 +325,27 @@
             </div>
         </div>
     </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <circle cx="8" cy="9" r="1" fill="currentColor"/>
+                    <circle cx="15" cy="7" r="1" fill="currentColor"/>
+                    <circle cx="10" cy="14" r="1" fill="currentColor"/>
+                    <circle cx="16" cy="13" r="1" fill="currentColor"/>
+                    <circle cx="13" cy="17" r="0.8" fill="currentColor"/>
+                </svg>
+            </div>
+            <p class="cookie-text">Utilizamos cookies para mejorar tu experiencia, analizar el uso del sitio web y ofrecer determinadas funcionalidades.</p>
+            <div class="cookie-actions">
+                <button id="cookie-reject" class="cookie-btn cookie-btn-reject">Rechazar</button>
+                <button id="cookie-accept" class="cookie-btn cookie-btn-accept">Aceptar</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
