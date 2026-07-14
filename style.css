@@ -206,13 +206,13 @@ body {
 .logo-text-compact { font-weight: 600; font-size: 1rem; letter-spacing: -0.01em; line-height: 1.2; }
 .footer-bg-logo {
     position: absolute;
-    top: -120px;
+    top: -240px;
     left: 50%;
     transform: translateX(-50%);
     height: 180%;
     width: auto;
     max-width: none;
-    opacity: 0.08;
+    opacity: 0.1;
     pointer-events: none;
     z-index: 1;
     filter: brightness(0) invert(1);
