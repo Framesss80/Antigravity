@@ -2,112 +2,195 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>CLINICA DENTAL DOCTOR PEREZ</title>
+    <title>Clínica Dental Luis Pérez - Madrid</title>
     <style>
         body {
-            background-color: #FFFFCC;
-            color: #0000FF;
-            font-family: "Comic Sans MS", "Chalkboard SE", cursive;
+            background-color: #f0f4f8;
+            color: #333333;
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
-            padding: 10px;
-            text-align: center;
-            font-size: 11px;
-        }
-        header {
-            background-color: #FF0000;
-            color: #FFFFFF;
-            padding: 10px;
-            border: 3px double #00FF00;
-        }
-        h1 {
-            margin: 0;
-            font-size: 16px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        marquee {
-            background-color: #00FFFF;
-            color: #FF00FF;
-            font-weight: bold;
-            padding: 3px;
-            margin: 5px 0;
+            padding: 0;
             font-size: 10px;
+            line-height: 1.3;
         }
-        nav {
-            margin: 5px 0;
+        .header {
+            background-color: #ffffff;
+            padding: 8px 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #003366;
+        }
+        .title-area h1 {
+            color: #003366;
+            margin: 0;
+            font-size: 13px;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+        }
+        .title-area p {
+            margin: 2px 0 0 0;
+            font-size: 8px;
+            color: #666666;
+            font-style: italic;
+        }
+        .contact-info {
+            text-align: right;
+            font-size: 8px;
+            color: #444444;
+        }
+        .nav-bar {
+            background-color: #003366;
+            padding: 4px 10px;
+        }
+        .nav-bar a {
+            color: #ffffff;
+            text-decoration: none;
             font-size: 9px;
+            font-weight: bold;
+            margin-right: 15px;
         }
-        nav a {
-            color: #0000FF;
+        .nav-bar a:hover {
             text-decoration: underline;
-            font-weight: bold;
-            padding: 0 5px;
         }
-        .main-content {
-            border: 2px dashed #0000FF;
-            background-color: #FFFFFF;
+        .container {
+            display: flex;
+            padding: 10px;
+            gap: 10px;
+        }
+        .main-column {
+            flex: 2;
+            background-color: #ffffff;
+            padding: 10px;
+            border: 1px solid #cccccc;
+        }
+        .side-column {
+            flex: 1;
+            background-color: #e1e7ee;
             padding: 8px;
-            margin-top: 5px;
+            border: 1px solid #b6c6d6;
         }
-        .services {
-            text-align: left;
-            margin: 5px auto;
-            display: inline-block;
-            font-size: 10px;
+        h2 {
+            color: #003366;
+            border-bottom: 1px solid #003366;
+            padding-bottom: 3px;
+            margin: 0 0 8px 0;
+            font-size: 11px;
+            text-transform: uppercase;
         }
-        .services li {
-            margin-bottom: 2px;
+        p {
+            margin: 0 0 8px 0;
+            text-align: justify;
         }
-        .btn-call {
-            background-color: #FF00FF;
-            color: #FFFFFF;
-            border: 3px outset #FFFFFF;
-            padding: 5px 10px;
+        ul {
+            margin: 0 0 10px 0;
+            padding-left: 15px;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+        .banner-box {
+            background-color: #ffebeb;
+            border: 1px solid #ffcccc;
+            color: #cc0000;
+            padding: 6px;
             font-weight: bold;
-            cursor: pointer;
-            font-size: 10px;
-            display: inline-block;
-            margin-top: 5px;
-        }
-        .counter {
-            font-family: monospace;
-            background-color: #000000;
-            color: #00FF00;
-            padding: 2px 5px;
-            font-size: 10px;
-            margin-top: 8px;
-            display: inline-block;
-        }
-        .warning {
-            color: #FF0000;
-            font-weight: bold;
+            text-align: center;
+            margin-bottom: 8px;
             font-size: 9px;
+        }
+        .sidebar-section {
+            margin-bottom: 10px;
+            font-size: 8px;
+        }
+        .sidebar-section h3 {
+            margin: 0 0 4px 0;
+            font-size: 9px;
+            color: #003366;
+        }
+        .form-outdated {
             margin-top: 5px;
+        }
+        .form-outdated input, .form-outdated textarea {
+            width: 100%;
+            margin-bottom: 4px;
+            font-size: 8px;
+            padding: 2px;
+            border: 1px solid #999999;
+            box-sizing: border-box;
+        }
+        .form-outdated button {
+            background-color: #eeeeee;
+            border: 1px solid #777777;
+            padding: 3px 8px;
+            font-size: 8px;
+            cursor: pointer;
+        }
+        .form-outdated button:hover {
+            background-color: #dddddd;
+        }
+        .footer-text {
+            text-align: center;
+            font-size: 8px;
+            color: #888888;
+            margin-top: 5px;
+            padding-top: 5px;
+            border-top: 1px solid #dddddd;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>*** CLINICA DENTAL PEREZ ***</h1>
-    </header>
-    <marquee scrollamount="5">¡¡¡ BIENVENIDOS A NUESTRA WEB !!! OFERTA: LIMPIEZA 20€ !!!</marquee>
-    <nav>
-        <a href="#">INICIO</a> | <a href="#">FOTOS</a> | <a href="#">DONDE ESTAMOS</a> | <a href="#">CONTACTO</a>
-    </nav>
-    <div class="main-content">
-        <p><strong>¿Le duele una muela? ¡Nosotros se la sacamos barato!</strong></p>
-        <p>Hacemos empastes, limpiezas y prótesis dentales de todo tipo.</p>
-        <ul class="services">
-            <li>1. Sacar dientes (sin dolor casi)</li>
-            <li>2. Limpieza con cepillo fuerte</li>
-            <li>3. Ortodoncia para niños y adultos</li>
-        </ul>
-        <br>
-        <div class="btn-call">¡¡ LLAME YA AL 555-1234 !!</div>
-        <div class="warning">Página optimizada para Internet Explorer 6.0</div>
-        <div>
-            <span class="counter">Visitante Nº 000425</span>
+    <div class="header">
+        <div class="title-area">
+            <h1>Clínica Dental Dr. Luis Pérez</h1>
+            <p>Especialistas en Odontología General desde 1995</p>
         </div>
+        <div class="contact-info">
+            Tlf: 91 555 12 12<br>
+            C/ Mayor 12, 1º Izq. - Madrid
+        </div>
+    </div>
+    <div class="nav-bar">
+        <a href="#">INICIO</a>
+        <a href="#">QUIÉNES SOMOS</a>
+        <a href="#">SERVICIOS</a>
+        <a href="#">CONTACTO</a>
+    </div>
+    <div class="container">
+        <div class="main-column">
+            <h2>Nuestra Clínica</h2>
+            <p>En la Clínica Dental del Dr. Luis Pérez ofrecemos un trato cercano y profesional a todos nuestros pacientes. Contamos con una dilatada experiencia en el cuidado de su salud bucodental en pleno centro de Madrid.</p>
+            <p>Realizamos todo tipo de tratamientos bucodentales con la máxima confianza y profesionalidad:</p>
+            <ul>
+                <li>Odontología general y empastes de composite</li>
+                <li>Endodoncias y reconstrucciones complejas</li>
+                <li>Prótesis dentales fijas y removibles</li>
+                <li>Limpiezas dentales con ultrasonidos</li>
+            </ul>
+        </div>
+        <div class="side-column">
+            <div class="banner-box">
+                ¡SOLICITE PRESUPUESTO SIN COMPROMISO!
+            </div>
+            <div class="sidebar-section">
+                <h3>HORARIO DE CONSULTA</h3>
+                Lunes a Viernes:<br>
+                10:00 - 14:00 y 16:00 - 20:00<br>
+                Sábados cerrados.
+            </div>
+            <div class="sidebar-section">
+                <h3>CONTACTE CON NOSOTROS</h3>
+                <div class="form-outdated">
+                    <input type="text" placeholder="Nombre completo">
+                    <input type="text" placeholder="Teléfono de contacto">
+                    <textarea rows="2" placeholder="Escriba su consulta..."></textarea>
+                    <button type="button">Enviar Consulta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-text">
+        © 2008 Clínica Dental Luis Pérez. Todos los derechos reservados.
     </div>
 </body>
 </html>
