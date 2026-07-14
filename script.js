@@ -153,7 +153,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const cookieReject = document.getElementById('cookie-reject');
 
     if (cookieBanner) {
-        const cookieChoice = localStorage.getItem('cookie-consent');
+        let cookieChoice = null;
+        try {
+            cookieChoice = localStorage.getItem('cookie-consent');
+        } catch (e) {
+            console.warn('Storage blocked:', e);
+        }
 
         if (cookieChoice) {
             // User already made a choice, hide banner immediately
@@ -162,14 +167,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (cookieAccept) {
             cookieAccept.addEventListener('click', () => {
-                localStorage.setItem('cookie-consent', 'accepted');
+                try {
+                    localStorage.setItem('cookie-consent', 'accepted');
+                } catch (e) {
+                    console.warn('Storage blocked:', e);
+                }
                 cookieBanner.style.display = 'none';
             });
         }
 
         if (cookieReject) {
             cookieReject.addEventListener('click', () => {
-                localStorage.setItem('cookie-consent', 'rejected');
+                try {
+                    localStorage.setItem('cookie-consent', 'rejected');
+                } catch (e) {
+                    console.warn('Storage blocked:', e);
+                }
                 cookieBanner.style.display = 'none';
             });
         }
