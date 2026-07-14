@@ -120,9 +120,12 @@ body {
 .section-title { font-size: 3rem; font-weight: 700; letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 80px; }
 
 /* Comparison Section */
-.comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: stretch; max-width: 1000px; margin: 0 auto; }
-.comparison-col { display: flex; flex-direction: column; gap: 16px; }
-.comp-item { font-size: 1.25rem; font-weight: 500; display: flex; align-items: flex-start; gap: 16px; line-height: 1.4; }
+.comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1000px; margin: 0 auto; align-items: start; }
+.comparison-col { display: grid; grid-template-rows: auto auto 1fr 1fr 1fr; gap: 0; padding-bottom: 0; }
+.comparison-col h2 { margin-bottom: 8px; }
+.comparison-col > p { margin-bottom: 24px; }
+.comp-item { font-size: 1.25rem; font-weight: 500; display: flex; align-items: center; gap: 16px; line-height: 1.4; padding: 12px 0; border-top: 1px solid rgba(255,255,255,0.07); }
+.success-col .comp-item { border-top-color: rgba(0,0,0,0.07); }
 .icon-x { color: #ff4d4f; font-weight: bold; font-size: 1.5rem; line-height: 1.2;}
 .icon-check { color: #10b981; font-weight: bold; font-size: 1.5rem; line-height: 1.2;}
 .icon-check.green { color: #10b981; }
