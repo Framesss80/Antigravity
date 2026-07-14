@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Prevent iframe recursion
+    if (window.location.search.includes('embed=true')) {
+        const heroVisual = document.querySelector('.hero-visual');
+        if (heroVisual) heroVisual.style.display = 'none';
+        const cookieBanner = document.getElementById('cookie-banner');
+        if (cookieBanner) cookieBanner.style.display = 'none';
+        document.body.style.overflow = 'hidden';
+    }
+
     // 1. Scroll Reveal functionality
     const reveals = document.querySelectorAll('.reveal');
 
@@ -154,16 +163,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (cookieAccept) {
             cookieAccept.addEventListener('click', () => {
                 localStorage.setItem('cookie-consent', 'accepted');
-                cookieBanner.classList.add('hidden');
-                setTimeout(() => { cookieBanner.style.display = 'none'; }, 400);
+                cookieBanner.style.display = 'none';
             });
         }
 
         if (cookieReject) {
             cookieReject.addEventListener('click', () => {
                 localStorage.setItem('cookie-consent', 'rejected');
-                cookieBanner.classList.add('hidden');
-                setTimeout(() => { cookieBanner.style.display = 'none'; }, 400);
+                cookieBanner.style.display = 'none';
             });
         }
     }
