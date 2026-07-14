@@ -170,7 +170,7 @@ body {
 .portfolio-info p { color: var(--text-secondary); font-size: 1.125rem; }
 
 /* Benefits Grid */
-.benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px; text-align: left; max-width: 1000px; margin: 0 auto; }
+.benefits-grid { display: grid; grid-template-columns: repeat(3, auto); gap: 16px 48px; text-align: left; justify-content: center; margin: 0 auto; }
 .benefit-item { font-size: 1.125rem; display: flex; align-items: center; gap: 12px; }
 
 /* About Section */
