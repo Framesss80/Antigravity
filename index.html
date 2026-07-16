@@ -13,11 +13,14 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#top" class="logo-link"><img src="logo_header.png" alt="Eduardo Vázquez" class="logo-img"></a>
-            <div class="nav-links">
+            <button class="mobile-menu-toggle" aria-label="Abrir menú" id="mobile-menu-toggle">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <div class="nav-links" id="nav-links">
                 <a href="#servicios" class="nav-link">Qué incluye</a>
                 <a href="#proceso" class="nav-link">Nuestro Proceso</a>
-                <a href="#portfolio" class="nav-link">Proyectos</a>
-                <a href="#top" class="btn btn-outline" id="btn-reservar-demo">Reservar Demo</a>
+                <a href="#conocenos" class="nav-link">Conócenos</a>
+                <a href="https://calendly.com/digitalstudio24h/30min" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="btn-reservar-demo">Reservar Demo</a>
             </div>
         </div>
     </nav>
@@ -34,25 +37,6 @@
             <div class="hero-cta" id="hero-cta">
                 <a href="https://calendly.com/digitalstudio24h/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Ver una propuesta para mi negocio</a>
                 <span class="cta-note">Sin compromiso • 20 minutos • Online o presencial</span>
-            </div>
-        </div>
-        
-        <div class="hero-visual container reveal delay-1">
-            <div class="mockup-composition">
-                <div class="mockup-tablet shadow-xl">
-                    <iframe src="index.html?embed=true" style="width: 800px; height: 1085px; transform: scale(0.35); transform-origin: top left; border: none; pointer-events: none; overflow: hidden; position: absolute; top: 0; left: 0;"></iframe>
-                </div>
-                <div class="mockup-laptop shadow-2xl">
-                    <div class="mockup-header">
-                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                    </div>
-                    <div style="position: relative; flex: 1; overflow: hidden;">
-                        <iframe src="index.html?embed=true" style="width: 1400px; height: 816px; transform: scale(0.5); transform-origin: top left; border: none; pointer-events: none; overflow: hidden; position: absolute; top: 0; left: 0;"></iframe>
-                    </div>
-                </div>
-                <div class="mockup-mobile shadow-xl">
-                    <iframe src="index.html?embed=true" style="width: 360px; height: 720px; transform: scale(0.5); transform-origin: top left; border: none; pointer-events: none; overflow: hidden; position: absolute; top: 0; left: 0;"></iframe>
-                </div>
             </div>
         </div>
     </header>
@@ -179,38 +163,7 @@
         </div>
     </section>
 
-    <!-- 5. Portfolio -->
-    <section id="portfolio" class="section bg-light border-y">
-        <div class="container reveal">
-            <h2 class="section-title text-center">Nuestro Trabajo</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-card 3d-card">
-                    <div class="portfolio-image-wrapper">
-                        <div class="portfolio-mockup mockup-laptop">
-                            <div class="mockup-header"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-                            <div class="placeholder-content bg-gradient-4">Clínica Dental</div>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Centro de Salud Premium</h3>
-                        <p>Diseño corporativo y sistema de reservas.</p>
-                    </div>
-                </div>
-                <div class="portfolio-card 3d-card">
-                    <div class="portfolio-image-wrapper">
-                        <div class="portfolio-mockup mockup-laptop">
-                            <div class="mockup-header"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-                            <div class="placeholder-content bg-gradient-5">Despacho Abogados</div>
-                        </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Firma Legal</h3>
-                        <p>Posicionamiento SEO Local y confianza.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Portfolio section removed -->
 
     <!-- 6. Por qué Digital Studio -->
     <section class="section bg-dark text-white text-center">
@@ -231,7 +184,7 @@
     </section>
 
     <!-- 7. Sobre Mí -->
-    <section class="section">
+    <section id="conocenos" class="section">
         <div class="container reveal">
             <div class="about-wrapper">
                 <div class="about-image-col">
