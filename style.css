@@ -273,7 +273,8 @@ body {
 .footer-col { flex: 1; max-width: 400px; }
 .compact-footer-col { max-width: 320px; }
 .footer-logo-img { max-height: 96px; width: auto; object-fit: contain; filter: invert(1); }
-.footer-logo-wrap { display: flex; align-items: center; gap: 24px; }
+.footer-note-wrap { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-top: -8px; }
+.footer-note-wrap p { margin-bottom: 0; }
 .social-icon { color: var(--text-secondary); transition: color 0.2s ease; display: inline-flex; }
 .social-icon:hover { color: white; }
 .footer-links-grid { display: flex; gap: 64px; }
