@@ -218,54 +218,8 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
-.about-image-col {
-    position: sticky;
-    top: calc(var(--nav-height) + 40px);
-}
-.about-image-container {
-    position: relative;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-2xl);
-    aspect-ratio: 4/5;
-    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
-    border: 1px solid var(--border-color);
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.about-img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.about-image-container:hover .about-img {
-    transform: scale(1.03);
-}
-.about-image-badge {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background: rgba(10, 10, 10, 0.75);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: white;
-    padding: 8px 16px;
-    border-radius: 100px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+
+
 .badge-dot {
     width: 6px;
     height: 6px;
@@ -323,20 +277,16 @@ body {
 
 /* Responsive */
 @media (max-width: 900px) {
-    .hero-title { font-size: 3rem; }
-    .mockup-composition { height: auto; flex-direction: column; align-items: center; gap: 24px; padding-bottom: 40px;}
-    .mockup-laptop { width: 100%; height: 300px; }
-    .mockup-tablet, .mockup-mobile { position: relative; left: 0; right: 0; bottom: 0; }
-    
-    .comparison-grid { grid-template-columns: 1fr; gap: 24px; text-align: center; }
-    .comp-item { justify-content: center; }
-    .stats-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
-    .deliverables-clean-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
-    .deliverable-item { flex-direction: column; text-align: center; gap: 12px; padding: 24px 16px; }
-    .deliverable-item h3 { font-size: 1.125rem; }
-    .before-after-grid { flex-direction: column; gap: 24px; }
-    .ba-arrow { transform: rotate(90deg); margin-top: 0; }
-    
+    /* General */
+    .section { padding: 80px 0; }
+
+    /* Hero */
+    .hero { padding-top: calc(100px + var(--nav-height)); }
+    .hero-title { font-size: 2.5rem; }
+    .hero-subtitle { font-size: 1.05rem; }
+    .btn-large { padding: 14px 28px; font-size: 1rem; }
+
+    /* Navigation */
     .mobile-menu-toggle { display: block; }
     .nav-links {
         display: none; flex-direction: column; position: absolute;
@@ -346,14 +296,39 @@ body {
         box-shadow: 0 10px 30px rgba(0,0,0,0.08); gap: 24px; text-align: center;
     }
     .nav-links.active { display: flex; }
-    
+
+    /* Comparison */
+    .comparison-grid { grid-template-columns: 1fr; gap: 24px; text-align: center; }
+    .comp-item { justify-content: center; }
+
+    /* Stats */
+    .stats-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+
+    /* Deliverables */
+    .deliverables-clean-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .deliverable-item { flex-direction: column; text-align: center; gap: 12px; padding: 20px 12px; }
+    .deliverable-item h3 { font-size: 1rem; }
+
+    /* Before/After */
+    .before-after-grid { flex-direction: column; gap: 24px; }
+    .ba-arrow { transform: rotate(90deg); margin-top: 0; }
+
+    /* Benefits */
+    .benefits-grid { grid-template-columns: 1fr 1fr; gap: 12px 24px; }
+    .benefit-item { font-size: 1rem; }
+
+    /* Timeline */
     .timeline-item { flex-direction: column; gap: 16px; }
-    .step-num { font-size: 3rem; }
-    
-    .about-wrapper { gap: 40px; }
-    .values-grid { grid-template-columns: 1fr; }
-    .about-image-col { position: relative; top: 0; max-width: 320px; margin: 0 auto; }
-    
+    .step-num { font-size: 3rem; min-width: unset; }
+
+    /* About / Conócenos */
+    .about-content-col h2 { font-size: 1.5rem; margin-bottom: 28px; }
+    .values-grid { grid-template-columns: 1fr; gap: 12px; margin-bottom: 32px; }
+
+    /* Section titles */
+    .section-title { font-size: 2rem; }
+
+    /* Footer */
     .footer-content { flex-direction: column; }
     .footer-links-grid { flex-direction: column; gap: 40px; width: 100%; }
 }
