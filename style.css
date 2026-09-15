@@ -207,22 +207,24 @@ body {
 /* Projects Section */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
 }
 .project-card {
     background: #ffffff;
     border: 1px solid var(--border-color);
     border-radius: 20px;
     overflow: hidden;
+    text-decoration: none;
+    color: inherit;
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
     display: flex;
     flex-direction: column;
 }
 .project-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.07);
-    border-color: rgba(79, 70, 229, 0.35);
+    box-shadow: 0 22px 46px rgba(0, 0, 0, 0.08);
+    border-color: rgba(79, 70, 229, 0.4);
 }
 .project-mockup {
     background: #111318;
@@ -252,53 +254,54 @@ body {
 .m-dot.yellow { background: #f59e0b; }
 .m-dot.green { background: #10b981; }
 .mockup-url {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     color: #94a3b8;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     background: rgba(255, 255, 255, 0.06);
-    padding: 3px 12px;
+    padding: 3px 10px;
     border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.08);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
 }
-.live-pill {
+.visit-badge {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
     font-size: 0.72rem;
-    font-weight: 500;
-    color: #10b981;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 3px 8px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
 }
-.live-dot {
-    width: 6px;
-    height: 6px;
-    background: #10b981;
-    border-radius: 50%;
-    box-shadow: 0 0 6px #10b981;
-    animation: pulseDot 2s infinite;
+.project-card:hover .visit-badge {
+    background: var(--accent);
+    color: #ffffff;
 }
 .project-screen {
-    height: 230px;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 24px;
+    padding: 24px 20px;
     position: relative;
     transition: transform 0.4s ease;
 }
 .project-card:hover .project-screen {
     transform: scale(1.02);
 }
-.bg-masia {
-    background: radial-gradient(circle at 85% 15%, rgba(217, 119, 6, 0.18), transparent 50%), linear-gradient(135deg, #1c1917 0%, #292524 50%, #0c0a09 100%);
+.bg-prehouses {
+    background: radial-gradient(circle at 85% 15%, rgba(245, 158, 11, 0.22), transparent 55%), linear-gradient(135deg, #18181b 0%, #27272a 50%, #09090b 100%);
 }
-.bg-tpva {
-    background: radial-gradient(circle at 85% 15%, rgba(59, 130, 246, 0.22), transparent 50%), linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #090d16 100%);
+.bg-rocioart {
+    background: radial-gradient(circle at 85% 15%, rgba(244, 114, 182, 0.25), transparent 55%), linear-gradient(135deg, #24141d 0%, #381b2a 50%, #11070e 100%);
 }
-.bg-dental {
-    background: radial-gradient(circle at 85% 15%, rgba(16, 185, 129, 0.22), transparent 50%), linear-gradient(135deg, #064e3b 0%, #065f46 45%, #022c22 100%);
-}
-.bg-brand {
-    background: radial-gradient(circle at 85% 15%, rgba(168, 85, 247, 0.24), transparent 50%), linear-gradient(135deg, #2e1065 0%, #3b0764 50%, #09090b 100%);
+.bg-rscuts {
+    background: radial-gradient(circle at 85% 15%, rgba(99, 102, 241, 0.28), transparent 55%), linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #030712 100%);
 }
 .project-screen-content {
     text-align: center;
